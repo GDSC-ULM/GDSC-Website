@@ -1,0 +1,80 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 0 5px rgb(99 114 130 / 30%);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0px 0px 20px;
+}
+
+.logoImg {
+  height: 60px;
+  width: 400px;
+}
+
+.menuItems {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  text-align: center;
+  list-style: none;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.items {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.home:hover {
+  background-color: rgba(76, 139, 245, 0.3333333333333333);
+  border-radius: 4px;
+}
+
+.join:hover {
+  background-color: rgba(245, 76, 76, 0.3333333333333333);
+  border-radius: 4px;
+}
+
+.pastEvents:hover {
+  background-color: rgba(76, 245, 90, 0.3333333333333333);
+  border-radius: 4px;
+}
+
+.about:hover {
+  background-color: rgba(228, 245, 76, 0.3333333333333333);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .logoImg {
+    height: 50%;
+    width: 50%;
+  }
+  .navbar {
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .logoImg {
+    height: 50px;
+    width: 310px;
+  }
+  .navbar {
+    align-items: center;
+  }
+} */
