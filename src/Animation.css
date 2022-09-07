@@ -1,0 +1,11 @@
+.animation {
+  position: relative;
+  overflow: hidden;
+  height: 87vh;
+
+  z-index: 2;
+}
+
+.particles {
+  position: absolute;
+}

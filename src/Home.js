@@ -1,20 +1,20 @@
 import React from "react";
+import Animation from "./Animation";
 import "./Home.css";
 
 function Home() {
   return (
     <div className="landingPage">
+      <Animation/>
       <div className="homePage">
-        <h1>Google DSC @ ULM</h1>
+        <h1>Google Developer Students Club @ ULM</h1>
         <p>
-          GDSC at ULM is a program powered by Google Developers designed for
-          university students to learn a wide variety of skills and technologies
-          including mobile and web development, design thinking, and leadership.
+          The Google Developers Student Club at ULM is program powered by Google
+          for tech aspiring university students to learn new skills and
+          technologies and gain real time experience.
         </p>
-          </div>
-          <div className="infoPage">
-             
-          </div>
+      </div>
+      <div className="infoPage"></div>
     </div>
   );
 }
