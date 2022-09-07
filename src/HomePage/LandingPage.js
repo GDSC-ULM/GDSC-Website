@@ -1,12 +1,12 @@
 import React from "react";
-import Animation from "./Animation";
-import "./Home.css";
 
-function Home() {
+import "./LandingPage.css";
+
+function LandingPage() {
   return (
     <div className="landingPage">
-      <Animation/>
-      <div className="homePage">
+      
+      <div className="landingPage-text">
         <h1>Google Developer Students Club @ ULM</h1>
         <p>
           The Google Developers Student Club at ULM is program powered by Google
@@ -14,9 +14,8 @@ function Home() {
           technologies and gain real time experience.
         </p>
       </div>
-      <div className="infoPage"></div>
     </div>
   );
 }
 
-export default Home;
+export default LandingPage;

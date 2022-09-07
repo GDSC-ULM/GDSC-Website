@@ -8,7 +8,7 @@
   box-shadow: 0 0 5px rgb(99 114 130 / 30%);
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 1000;
   background-color: #fff;
 }
 

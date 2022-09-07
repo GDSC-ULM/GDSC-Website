@@ -1,5 +1,5 @@
 import Particles from "react-particles";
-import configParticles from "./config/configParticles";
+import configParticles from "../config/configParticles";
 import { loadFull } from "tsparticles";
 import "./Animation.css";
 

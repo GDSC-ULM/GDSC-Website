@@ -36,13 +36,13 @@ const configParticles = {
       },
     },
     size: {
-      value: 120,
+      value: 110,
       random: true,
       anim: {
         enable: true,
-        speed: 10,
-        size_min: 60,
-        sync: false,
+        speed: 5,
+        size_min: 80,
+        sync: true,
       },
     },
     line_linked: {
@@ -55,11 +55,11 @@ const configParticles = {
     move: {
       enable: true,
       speed: 1,
-      direction: "none",
+      direction: "top",
       random: true,
       straight: false,
       out_mode: "out",
-      bounce: false,
+      bounce: true,
       attract: {
         enable: false,
         rotateX: 600,

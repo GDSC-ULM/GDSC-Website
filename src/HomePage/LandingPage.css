@@ -2,7 +2,7 @@
   height: max-content;
 }
 
-.homePage {
+.landingPage-text {
   height: 87vh;
 
   z-index: 3;
@@ -19,13 +19,13 @@
   transform: translate(-50%, -50%);
 }
 
-.homePage > h1 {
+.landingPage-text > h1 {
   font-size: 4rem;
   color: #4e4e4e;
   margin-bottom: 0;
 }
 
-.homePage > p {
+.landingPage-text > p {
   font-size: 2rem;
   color: #4e4e4e;
 }

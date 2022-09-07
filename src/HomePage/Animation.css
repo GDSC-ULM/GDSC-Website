@@ -1,8 +1,7 @@
 .animation {
   position: relative;
   overflow: hidden;
-  height: 87vh;
-
+  height: 100vh;
   z-index: 2;
 }
 
