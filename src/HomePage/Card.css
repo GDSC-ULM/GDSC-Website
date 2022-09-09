@@ -38,6 +38,7 @@
 
 .work-list {
   display: flex;
-  align-items: center;
+  text-align: start;
   justify-content: center;
+  align-items: center;
 }
