@@ -40,22 +40,22 @@
 }
 
 .home:hover {
-  background-color: rgba(76, 139, 245, 0.3333333333333333);
+  background-color: #4286f477;
   border-radius: 4px;
 }
 
 .join:hover {
-  background-color: rgba(245, 76, 76, 0.3333333333333333);
+  background-color: #db453768;
   border-radius: 4px;
 }
 
 .pastEvents:hover {
-  background-color: rgba(76, 245, 90, 0.3333333333333333);
+  background-color: #0f9d587e;
   border-radius: 4px;
 }
 
 .about:hover {
-  background-color: rgba(228, 245, 76, 0.3333333333333333);
+  background-color: #f4b30089;
   border-radius: 4px;
 }
 

@@ -1,11 +1,12 @@
 import React from "react";
+import Animation from "./Animation";
 
 import "./LandingPage.css";
 
 function LandingPage() {
   return (
     <div className="landingPage">
-      
+      <Animation />
       <div className="landingPage-text">
         <h1>Google Developer Students Club @ ULM</h1>
         <p>
