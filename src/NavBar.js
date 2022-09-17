@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import logo from "./logo/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -50,10 +51,17 @@ function NavBar() {
         />
       ) : (
         <ul className="menuItems">
-          <li className="items home">Home</li>
-          <li className="items join">Join</li>
-          <li className="items pastEvents">Past Events</li>
-          <li className="items about">About</li>
+          <Link to="/">
+            {" "}
+            <li className="items home">Home</li>
+          </Link>
+          <Link to="/join">
+            <li className="items join">Join</li>
+          </Link>
+          <li className="items pastEvents">Events</li>
+          <Link to="/about">
+            <li className="items about">About</li>
+          </Link>
         </ul>
       )}
     </div>

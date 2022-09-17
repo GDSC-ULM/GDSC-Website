@@ -34,6 +34,11 @@
   margin-right: 2rem;
 }
 
+.menuItems > a {
+  text-decoration: none;
+  color: black;
+}
+
 .items {
   padding: 0.5rem 1rem;
   cursor: pointer;
