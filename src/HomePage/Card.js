@@ -38,8 +38,8 @@ function Card(props) {
             <li>Game Development Workshop</li>
             <li>NFT Minting Workshop</li>
           </ul>
-          <ul className="second-list">
-            <li>Networking and Outreach Events</li>
+          <ul className="second-list second">
+            <li>Networking Events</li>
             <li>Let's Talk Internship</li>
             <li>Web Development Marathons</li>
           </ul>

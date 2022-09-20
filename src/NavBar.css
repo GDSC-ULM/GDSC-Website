@@ -66,8 +66,8 @@
 
 @media screen and (max-width: 1000px) {
   .logoImg {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
   }
   .navbar {
     align-items: center;
@@ -100,8 +100,9 @@
 }
 .clickedStack {
   background-color: #f5f5f5f1;
-  z-index: 4;
-  position: relative;
+  z-index: 9999;
+  position: absolute;
   transition: ease-in-out 0.1s;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(99 114 130 / 30%);
 }
-
