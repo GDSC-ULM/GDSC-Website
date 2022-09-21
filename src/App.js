@@ -5,8 +5,7 @@ import Home from "./HomePage/Home";
 import Animation from "./HomePage/Animation";
 import NavBar from "./NavBar";
 import Join from "./Join";
-import Events from "./Events";
-import EventPage from "./EventPage";
+import Events from "./EventsPage/Events";
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
         />
         <Route path="/join" element={<Join />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/eventPage" element={<EventPage />} />
       </Routes>
     </div>
   );

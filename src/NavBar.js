@@ -50,6 +50,11 @@ function NavBar() {
     changeIsStackClicked(!isStackClicked);
   };
 
+  const handleTouch = (e) => {
+    changeIsStackClicked(false);
+    console.log("touched");
+  };
+
   return (
     <>
       <div className="navbar">
@@ -69,7 +74,6 @@ function NavBar() {
         ) : (
           <ul className="menuItems">
             <Link to="/">
-              {" "}
               <li className="items home">Home</li>
             </Link>
             <Link to="/events">
@@ -91,6 +95,7 @@ function NavBar() {
           opacity: isStackClicked ? 1 : 0,
           transition: isStackClicked ? "ease-in 0.2s" : "ease-out 0.2s",
         }}
+        onClick={handleTouch}
       >
         <ul className="menuItems clicked">
           <Link to="/">

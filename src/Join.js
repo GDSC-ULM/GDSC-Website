@@ -14,7 +14,13 @@ function Join() {
             <li>Internship Oppurtinites</li>
             <li>Networking</li>
           </ul>
-          <button>Join</button>
+          <a
+            href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Join</button>
+          </a>
         </div>
         <div className="joinCard team">
           <h3>Become a Core Team Member</h3>
@@ -24,7 +30,13 @@ function Join() {
             <li>Internship Oppurtinites</li>
             <li>Networking</li>
           </ul>
-          <button>Join</button>
+          <a
+            href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button disabled>Apply</button>
+          </a>
         </div>
       </div>
     </div>

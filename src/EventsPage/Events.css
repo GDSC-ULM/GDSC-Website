@@ -1,0 +1,15 @@
+.eventsPage {
+  text-align: center;
+  width: 100%;
+  color: #4e4e4e;
+  position: relative;
+}
+
+.eventsPage > h1 {
+  font-size: 3rem;
+}
+
+.eventCardHolder {
+  display: flex;
+  justify-content: center;
+}

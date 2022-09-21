@@ -10,7 +10,7 @@
   color: #4e4e4e;
   box-shadow: 0 0 20px rgb(158, 167, 177);
   border-radius: 10px;
-  padding-bottom: 40px;
+  padding: 5px 0px 40px 0px;
 
   position: relative;
   left: 6%;
@@ -18,7 +18,7 @@
 
 .card > h2 {
   font-size: 3rem;
-  padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 .card-list {

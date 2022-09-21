@@ -41,7 +41,7 @@
   font-weight: 500;
 }
 
-.joinCard > button {
+.joinCard > a > button {
   background-color: white;
   border: none;
   border-radius: 10px;
@@ -51,7 +51,7 @@
   transition: ease-in-out 300ms;
 }
 
-.joinCard > button:hover {
+.joinCard > a > button:hover {
   transform: scale(1.05);
 }
 .member {

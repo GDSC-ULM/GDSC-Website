@@ -38,7 +38,7 @@ export const datas = [
   },
   {
     name: "Aavash Kuikel",
-    role: "Marketing",
+    role: "Treasurer",
     img: pic6,
     link: "https://www.linkedin.com/in/aavash-kuikel-62b699224/",
   },
