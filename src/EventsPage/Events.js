@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { events } from "../logo/EventsData";
 import EventCard from "./EventCard";
 import "./Events.css";

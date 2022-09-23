@@ -20,9 +20,10 @@ function Card(props) {
             <span style={{ color: "#0F9D58" }}>E</span>
             <span style={{ color: "#DB4437" }}>T</span>
             <span style={{ color: "#4285F4" }}>W</span>
-            <span style={{ color: "	#0F9D58" }}>O</span>
+            <span style={{ color: "#0F9D58" }}>O</span>
             <span style={{ color: "#DB4437" }}>R</span>
             <span style={{ color: "#4285F4" }}>K</span>
+            <span style={{ color: "#F4B400" }}>S</span>
           </li>
           <li>
             We Believe in <span style={{ color: "#4285F4" }}>C</span>

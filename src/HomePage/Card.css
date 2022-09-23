@@ -49,6 +49,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .card {
+    width: 89%;
+  }
   .card > h2 {
     font-size: 2.5rem;
   }

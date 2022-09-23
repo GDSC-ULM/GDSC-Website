@@ -67,22 +67,22 @@
 @media screen and (max-width: 1000px) {
   .logoImg {
     height: 60%;
-    width: 60%;
+    width: 55%;
   }
   .navbar {
     align-items: center;
   }
 }
 
-/* @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .logoImg {
-    height: 50px;
-    width: 310px;
+    height: 100%;
+    width: 90%;
   }
   .navbar {
     align-items: center;
   }
-} */
+}
 
 .clicked {
   display: flex;

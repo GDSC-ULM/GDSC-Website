@@ -13,3 +13,13 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 800px) {
+  .eventCardHolder {
+    flex-direction: column;
+  }
+  .eventsPage > h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+}
