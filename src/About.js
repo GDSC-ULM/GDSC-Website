@@ -1,4 +1,3 @@
-import Card from "./HomePage/Card";
 import React from "react";
 import "./About.css";
 import { datas } from "./logo/teamData";
