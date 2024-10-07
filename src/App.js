@@ -6,6 +6,7 @@ import Animation from "./HomePage/Animation";
 import NavBar from "./NavBar";
 import Join from "./Join";
 import Events from "./EventsPage/Events";
+import HawkthonAnnouncement from "./Hawkthon/HawkthonAnnouncement";
 
 function App() {
   return (
@@ -26,6 +27,15 @@ function App() {
           element={
             <>
               <About />
+            </>
+          }
+        />
+
+        <Route
+          path="/hawkthon"
+          element={
+            <>
+              <HawkthonAnnouncement />
             </>
           }
         />
