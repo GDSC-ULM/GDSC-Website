@@ -83,26 +83,6 @@ const HawkthonAnnouncement = () => {
                 </ul>
             </section>
 
-            <section>
-                <h2>Prizes & Recognition</h2>
-                <ul>
-                    <li><strong>First Place:</strong> 4 Monitors (total value $500) + 4 Gift Cards ($25 each)</li>
-                    <li><strong>Second Place:</strong> 4 Keyboards (total value $300) + 4 Gift Cards ($25 each)</li>
-                    <li><strong>Third Place:</strong> 4 Gift Cards ($25 each)</li>
-                </ul>
-                <p>Certificates will be awarded to all participants.</p>
-            </section>
-
-            <section>
-                <h2>Budget Overview</h2>
-                <ul>
-                    <li><strong>Aramark Lunch:</strong> $300</li>
-                    <li><strong>Hangar Hall Venue:</strong> $300</li>
-                    <li><strong>Prizes:</strong> Total value ~$1,000</li>
-                    <li><strong>Event Supplies:</strong> ID Badge Holders, Snacks, T-shirts, Plaques</li>
-                    <li><strong>Total Estimated Budget:</strong> $2,000 - $2,500</li>
-                </ul>
-            </section>
 
             <section>
                 <h2>Expected Outcomes</h2>
