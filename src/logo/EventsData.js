@@ -7,6 +7,11 @@ export const events = [
   {
     name: "GDSC-Getting Started With GIT",
     info: "A basic introduction to git, github, and version control; All about pushing, pulling , cloning and branching.",
-    link:"https://gdsc.community.dev/events/details/developer-student-clubs-the-university-of-louisiana-monroe-presents-getting-started-with-git/",
-  }
+    link: "https://gdsc.community.dev/events/details/developer-student-clubs-the-university-of-louisiana-monroe-presents-getting-started-with-git/",
+  },
+  {
+    name: "Hawkthon",
+    info: "An exciting hackathon event focused on providing innovative tech solutions for local businesses.",
+    link: "../Hawkthon",
+  },
 ];

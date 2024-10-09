@@ -30,15 +30,7 @@ function App() {
             </>
           }
         />
-
-        <Route
-          path="/hawkthon"
-          element={
-            <>
-              <HawkthonAnnouncement />
-            </>
-          }
-        />
+        <Route path="/hawkthon" element={<HawkthonAnnouncement />} />
         <Route path="/join" element={<Join />} />
         <Route path="/events" element={<Events />} />
       </Routes>
