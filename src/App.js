@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 import Join from "./Join";
 import Events from "./EventsPage/Events";
 import HawkthonAnnouncement from "./Hawkthon/HawkthonAnnouncement";
+import TechXpo from "./TechXpo/TechXpo";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           }
         />
         <Route path="/hawkthon" element={<HawkthonAnnouncement />} />
+        <Route path="techxpo" element={<TechXpo />} />
         <Route path="/join" element={<Join />} />
         <Route path="/events" element={<Events />} />
       </Routes>
