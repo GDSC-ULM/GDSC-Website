@@ -4,16 +4,18 @@ import { Box, Button, Card, CardContent, Typography, Grid, Container } from '@mu
 const TechXpo = () => {
     return (
         <Container maxWidth="md">
+            {/* About TechXpo ULM */}
             <Box my={4} textAlign="center">
                 <Typography variant="h3" color="primary" gutterBottom>
-                    About TechXpo ULM
+                     TechXpo
                 </Typography>
                 <Typography variant="body1">
-                    Hosted by the Google Developer Student Club (GDSC) at ULM, TechXpo ULM is an event that showcases innovative student projects across disciplines.
-                    Students can demonstrate how technology enhances their field and share ideas with peers, faculty, and industry professionals.
+                    Hosted by the Google Developer Student Club (GDSC) at ULM, TechXpo ULM is an exciting event that showcases innovative student projects from all majors. 
+                    It’s your opportunity to demonstrate how technology enhances your field of study and share your ideas with peers, faculty, and industry professionals.
                 </Typography>
             </Box>
 
+            {/* Why Participate? */}
             <Box my={4}>
                 <Typography variant="h4" color="secondary" gutterBottom>
                     Why Participate?
@@ -22,21 +24,23 @@ const TechXpo = () => {
                     <li>Showcase your skills and creativity</li>
                     <li>Network with industry professionals</li>
                     <li>Compete for awards and recognition</li>
-                    <li>Receive feedback from experts</li>
+                    <li>Tech-driven projects from any discipline are welcome, including software, research, and creative solutions.</li>
                 </ul>
             </Box>
 
+            {/* Important Dates */}
             <Box my={4}>
                 <Typography variant="h4" color="secondary" gutterBottom>
-                    Key Dates
+                    Important Dates
                 </Typography>
                 <Typography variant="body1"><strong>Last Submission Date:</strong> November 9, 2024</Typography>
-                <Typography variant="body1"><strong>Event Date:</strong> End of November 2024</Typography>
+                <Typography variant="body1"><strong>Event Date:</strong> November 22, 2024</Typography>
                 <Typography variant="body2">
                     Submit early! You can refine your submission as you develop your project, but only the final submission will be judged.
                 </Typography>
             </Box>
 
+            {/* Registration */}
             <Box my={4} textAlign="center">
                 <Button
                     variant="contained"
@@ -50,75 +54,134 @@ const TechXpo = () => {
                 </Button>
             </Box>
 
+            {/* Event Format */}
             <Box my={4}>
                 <Typography variant="h4" color="secondary" gutterBottom>
-                    TechXpo ULM Awards
+                    Event Format
+                </Typography>
+                <ul>
+                    <li><strong>10:00 AM – 10:30 AM:</strong> Opening Ceremony and Event Introduction</li>
+                    <li><strong>10:30 AM – 12:30 PM:</strong> Tech Showcases and Presentations</li>
+                    <li><strong>12:30 PM – 1:30 PM:</strong> Award Ceremony and Closing Remarks</li>
+                </ul>
+            </Box>
+
+            {/* Project Zones */}
+            <Box my={4}>
+                <Typography variant="h4" color="secondary" gutterBottom>
+                    Project Zones
+                </Typography>
+                <Typography variant="body1"><strong>Play Zone:</strong> VR, 3D Printer, Drones. Engage with interactive technology displays.</Typography>
+                <Typography variant="body1"><strong>Project Showcase Zone:</strong> Participants will showcase their projects to judges and visitors.</Typography>
+            </Box>
+
+            {/* Awards and Prizes */}
+            <Box my={4}>
+                <Typography variant="h4" color="secondary" gutterBottom>
+                    Awards and Prizes
                 </Typography>
                 <Grid container spacing={3}>
-                    {/* Best Overall Project */}
+                    {/* Individual Awards */}
                     <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Overall Project</Typography>
-                                <Typography variant="body2">Monitor + $25 per team member</Typography>
+                                <Typography variant="body2">Prize: Monitor + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Awarded to the project that excels across all criteria, from innovative ideas to technical precision, recognizing exceptional creativity and problem-solving.
+                                    Excels in all criteria, recognizing exceptional creativity and problem-solving.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
-                    {/* People’s Choice Award */}
                     <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">People’s Choice Award</Typography>
-                                <Typography variant="body2">Keyboard + $25 per team member</Typography>
+                                <Typography variant="body2">Prize: Keyboard + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Chosen by event attendees, this award celebrates the project that resonates most with the audience, highlighting its impact and appeal.
+                                    Awarded by audience vote, highlighting impactful and popular projects.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
-                    {/* Best Use of Technology */}
                     <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Use of Technology</Typography>
-                                <Typography variant="body2">Mouse + $25 per team member</Typography>
+                                <Typography variant="body2">Prize: Mouse + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Highlights the team that demonstrates the most effective or innovative use of technology, showcasing a deep understanding of tech to enhance their solution.
+                                    Showcases effective or innovative technology usage.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
-                    {/* Best Interdisciplinary Project */}
                     <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Interdisciplinary Project</Typography>
-                                <Typography variant="body2">$25 per team member</Typography>
+                                <Typography variant="body2">Prize: $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Acknowledges the team that successfully merges insights from multiple fields, such as medtech, biotech, or IT, to create a project with a broad or unique perspective.
+                                    Recognizes cross-disciplinary projects that merge multiple fields.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
-                    {/* Honorable Mentions */}
-                    <Grid item xs={12}>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Card>
+                            <CardContent>
+                                <Typography variant="h6" color="primary">Domain Expert Award</Typography>
+                                <Typography variant="body2">Prize: $25 per team member + Domain expert recognition</Typography>
+                                <Typography variant="body2" color="textSecondary">
+                                    Honors exceptional research contributions within a specific domain.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12} sm={6} md = {4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Honorable Mentions for First-Year and Second-Year Projects</Typography>
                                 <Typography variant="body2">
-                                    Outstanding freshman and sophomore projects receive special certificates or university swag, supporting early-stage students as they develop skills and engage with the tech community.
+                                    Special certificates and university swag for outstanding freshman and sophomore projects.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
                 </Grid>
+            </Box>
+
+            {/* Project Judging Criteria */}
+            <Box my={4}>
+                <Typography variant="h4" color="secondary" gutterBottom>
+                    Project Judging Criteria
+                </Typography>
+                <ul>
+                    <li>Innovation and Creativity: Originality in problem-solving.</li>
+                    <li>Technical Proficiency: Quality and complexity of technology used.</li>
+                    <li>Relevance and Impact: Potential effect on community or industry.</li>
+                    <li>Presentation Clarity and Engagement: Communication and audience engagement.</li>
+                    <li>Documentation and Research Quality: Thoroughness and research depth.</li>
+                </ul>
+            </Box>
+
+            
+
+            {/* Contact Information */}
+            <Box my={4} textAlign="center">
+                <Typography variant="h6" color="primary">
+                    Contact Information
+                </Typography>
+                <Typography variant="body1">
+                    For any inquiries, please contact: <a href="mailto:khawasgs@warhawks.ulm.edu">khawasgs@warhawks.ulm.edu</a>
+                </Typography>
+                <Typography variant="body2">
+                    Join us for an engaging day filled with innovation, technology, and collaboration at TechXpo ULM!
+                </Typography>
             </Box>
         </Container>
     );
