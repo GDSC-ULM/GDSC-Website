@@ -9,7 +9,31 @@ const TechXpo = () => {
                     About TechXpo ULM
                 </Typography>
                 <Typography variant="body1">
-                    Hosted by the Google Developer Student Club (GDSC) at ULM, TechXpo ULM showcases innovative student projects from all majors. Share your ideas, demonstrate how technology enhances your field, and connect with peers, faculty, and industry professionals.
+                    Hosted by the Google Developer Student Club (GDSC) at ULM, TechXpo ULM is an event that showcases innovative student projects across disciplines.
+                    Students can demonstrate how technology enhances their field and share ideas with peers, faculty, and industry professionals.
+                </Typography>
+            </Box>
+
+            <Box my={4}>
+                <Typography variant="h4" color="secondary" gutterBottom>
+                    Why Participate?
+                </Typography>
+                <ul>
+                    <li>Showcase your skills and creativity</li>
+                    <li>Network with industry professionals</li>
+                    <li>Compete for awards and recognition</li>
+                    <li>Receive feedback from experts</li>
+                </ul>
+            </Box>
+
+            <Box my={4}>
+                <Typography variant="h4" color="secondary" gutterBottom>
+                    Key Dates
+                </Typography>
+                <Typography variant="body1"><strong>Last Submission Date:</strong> November 9, 2024</Typography>
+                <Typography variant="body1"><strong>Event Date:</strong> End of November 2024</Typography>
+                <Typography variant="body2">
+                    Submit early! You can refine your submission as you develop your project, but only the final submission will be judged.
                 </Typography>
             </Box>
 
@@ -28,69 +52,56 @@ const TechXpo = () => {
 
             <Box my={4}>
                 <Typography variant="h4" color="secondary" gutterBottom>
-                    Awards
+                    TechXpo ULM Awards
                 </Typography>
                 <Grid container spacing={3}>
                     {/* Best Overall Project */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Overall Project</Typography>
-                                <Typography variant="body2">Monitor + $25 Gift Card (per team member)</Typography>
+                                <Typography variant="body2">Monitor + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Awarded to the project that excels across all criteria, from innovative ideas to technical precision, recognizing creativity, problem-solving, and execution.
+                                    Awarded to the project that excels across all criteria, from innovative ideas to technical precision, recognizing exceptional creativity and problem-solving.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
                     {/* People’s Choice Award */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">People’s Choice Award</Typography>
-                                <Typography variant="body2">Keyboard + $25 Gift Card (per team member)</Typography>
+                                <Typography variant="body2">Keyboard + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Chosen by event attendees, this award celebrates the project that resonates most with the audience, highlighting engagement and impact.
+                                    Chosen by event attendees, this award celebrates the project that resonates most with the audience, highlighting its impact and appeal.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
                     {/* Best Use of Technology */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Use of Technology</Typography>
-                                <Typography variant="body2">Mouse + $25 Gift Card (per team member)</Typography>
+                                <Typography variant="body2">Mouse + $25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    Recognizes the team that demonstrates the most effective or innovative use of technology, showcasing a deep understanding of tech to enhance their solution.
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-
-                    {/* Most Innovative Solution */}
-                    <Grid item xs={12} sm={6}>
-                        <Card>
-                            <CardContent>
-                                <Typography variant="h6" color="primary">Most Innovative Solution</Typography>
-                                <Typography variant="body2">$25 (per team member)</Typography>
-                                <Typography variant="body2" color="textSecondary">
-                                    Given to the team that introduces creative solutions to real-world challenges, especially those addressing underserved issues.
+                                    Highlights the team that demonstrates the most effective or innovative use of technology, showcasing a deep understanding of tech to enhance their solution.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
                     {/* Best Interdisciplinary Project */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Card>
                             <CardContent>
                                 <Typography variant="h6" color="primary">Best Interdisciplinary Project</Typography>
-                                <Typography variant="body2">$15 (per team member)</Typography>
+                                <Typography variant="body2">$25 per team member</Typography>
                                 <Typography variant="body2" color="textSecondary">
-                                    For projects that effectively combine insights from multiple fields like medtech, biotech, or IT, creating a broad or unique perspective.
+                                    Acknowledges the team that successfully merges insights from multiple fields, such as medtech, biotech, or IT, to create a project with a broad or unique perspective.
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -102,7 +113,7 @@ const TechXpo = () => {
                             <CardContent>
                                 <Typography variant="h6" color="primary">Honorable Mentions for First-Year and Second-Year Projects</Typography>
                                 <Typography variant="body2">
-                                    Outstanding freshman and sophomore projects receive certificates or university swag, supporting early-stage students in their tech journey.
+                                    Outstanding freshman and sophomore projects receive special certificates or university swag, supporting early-stage students as they develop skills and engage with the tech community.
                                 </Typography>
                             </CardContent>
                         </Card>
