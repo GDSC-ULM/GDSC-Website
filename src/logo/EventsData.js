@@ -14,4 +14,9 @@ export const events = [
     info: "An exciting hackathon event focused on providing innovative tech solutions for local businesses.",
     link: "../Hawkthon",
   },
+  {
+    name: "TechXPo",
+    info: "A tech exhibition event showcasing the latest tech trends, projects, and innovations.",
+    link: "../TechXPo",
+  }
 ];
