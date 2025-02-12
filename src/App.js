@@ -1,42 +1,39 @@
-import { Route, Routes } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { ConfigProvider } from "antd";
+import "antd/dist/reset.css";
 import About from "./About";
 import "./App.css";
 import Home from "./HomePage/Home";
-import Animation from "./HomePage/Animation";
 import NavBar from "./NavBar";
 import Join from "./Join";
 import Events from "./EventsPage/Events";
-import HawkthonAnnouncement from "./Hawkthon/HawkthonAnnouncement";
-import TechXpo from "./TechXpo/TechXpo";
+import Hawkthon from "./HomePage/Hawkthon";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Animation />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <>
-              <About />
-            </>
-          }
-        />
-        <Route path="/hawkthon" element={<HawkthonAnnouncement />} />
-        <Route path="techxpo" element={<TechXpo />} />
-        <Route path="/join" element={<Join />} />
-        <Route path="/events" element={<Events />} />
-      </Routes>
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#1890ff",
+          borderRadius: 8,
+          colorBgContainer: "#ffffff",
+        },
+      }}
+    >
+      <div className="App">
+        <NavBar />
+        <main className="content-wrapper">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/join" element={<Join />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/events/hawkthon" element={<Hawkthon />} />
+          </Routes>
+        </main>
+      </div>
+    </ConfigProvider>
   );
 }
 

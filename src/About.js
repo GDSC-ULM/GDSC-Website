@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.css";
 import { datas } from "./logo/teamData";
+import Animation from "./HomePage/Animation";
 
 function About() {
   return (
-    <div className="aboutPage">
+    <div className="about-page">
+      <Animation />
       <h1>Meet The Team</h1>
       <div className="teamImg">
         {datas.map((data) => (

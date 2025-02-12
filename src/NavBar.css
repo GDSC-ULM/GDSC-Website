@@ -1,20 +1,114 @@
 .navbar {
-  height: 80px;
-  display: flex;
-  font-size: 1.2rem;
-  justify-content: center;
-  align-content: center;
-  font-size: 1.2rem;
-  box-shadow: 0 0 5px rgb(99 114 130 / 30%);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1000;
-  background-color: #fff;
+}
+
+.logo-wrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  height: auto;
-  margin: 10px 0px 0px 20px;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Desktop Menu Styles */
+.desktop-menu {
+  background: transparent;
+  border: none;
+  min-width: 400px;
+}
+
+.desktop-menu .ant-menu-item {
+  padding: 0 20px;
+  margin: 0 4px;
+}
+
+.desktop-menu .ant-menu-item:hover {
+  color: #1890ff;
+}
+
+.desktop-menu .ant-menu-item-selected {
+  background-color: #e6f7ff !important;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-button {
+  display: none;
+  font-size: 20px;
+  margin-left: 16px;
+}
+
+.mobile-drawer .ant-drawer-body {
+  padding: 0;
+}
+
+.mobile-drawer .ant-menu {
+  border-right: none;
+}
+
+.mobile-drawer .ant-menu-item {
+  padding-left: 24px !important;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 16px !important;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .logo {
+    height: 32px;
+  }
+}
+
+/* Override Ant Design Menu Styles */
+.ant-menu-horizontal {
+  line-height: 64px;
+}
+
+.ant-menu-item a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ant-menu-item:hover a {
+  color: #1890ff;
+}
+
+.ant-menu-item-selected a {
+  color: #1890ff;
 }
 
 .logoImg {
