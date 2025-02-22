@@ -9,6 +9,7 @@ function NavBar() {
   const [stack, changeStack] = useState(true); //when stack is to be shown or not
   const [isStackClicked, changeIsStackClicked] = useState(false); // when stack is clicked
 
+<<<<<<< Updated upstream
   //component renders
   useEffect(() => {
     return () => {
@@ -54,6 +55,30 @@ function NavBar() {
     changeIsStackClicked(false);
     console.log("touched");
   };
+=======
+  const menuItems = [
+    {
+      key: "/",
+      label: <Link to="/">Home</Link>,
+    },
+    {
+      key: "/events",
+      label: <Link to="/events">Events</Link>,
+    },
+    {
+      key: "/codeclash",
+      label: <Link to="/codeclash">CodeClash</Link>,
+    },
+    {
+      key: "/join",
+      label: <Link to="/join">Join</Link>,
+    },
+    {
+      key: "/about",
+      label: <Link to="/about">About</Link>,
+    },
+  ];
+>>>>>>> Stashed changes
 
   return (
     <>

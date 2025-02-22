@@ -1,0 +1,73 @@
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #00f2ff,
+      0 0 82px #00f2ff,
+      0 0 92px #00f2ff,
+      0 0 102px #00f2ff,
+      0 0 151px #00f2ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.leaderboard-table th {
+  background: rgba(0, 242, 255, 0.1);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.leaderboard-table tr {
+  transition: all 0.3s ease;
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(255, 0, 255, 0.1);
+  transform: scale(1.01);
+}
+
+.rank-cell {
+  width: 80px;
+  text-align: center;
+}
+
+.score-cell {
+  color: #00f2ff;
+  font-weight: 600;
+}
+
+.rank-1 {
+  color: #FFD700; /* Gold */
+}
+
+.rank-2 {
+  color: #C0C0C0; /* Silver */
+}
+
+.rank-3 {
+  color: #CD7F32; /* Bronze */
+}
+
+.MuiSvgIcon-root.rank-1,
+.MuiSvgIcon-root.rank-2,
+.MuiSvgIcon-root.rank-3 {
+  margin-right: 8px;
+  font-size: 24px;
+} 
