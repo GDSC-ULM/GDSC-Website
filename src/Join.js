@@ -15,7 +15,7 @@ function Join() {
             <li>Networking</li>
           </ul>
           <a
-            href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
+            href="https://webservices.ulm.edu/webforms/form/gdsc-interest-form"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,7 +31,7 @@ function Join() {
             <li>Networking</li>
           </ul>
           <a
-            href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
+            href="https://webservices.ulm.edu/webforms/form/gdsc-interest"
             target="_blank"
             rel="noreferrer"
           >
