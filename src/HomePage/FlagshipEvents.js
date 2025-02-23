@@ -17,7 +17,7 @@ const events = [
     links: [
       {
         text: "Learn More",
-        link: "events/hawkathon",
+        link: "/events/hawkathon",
       },
       {
         text: "Register Team",
