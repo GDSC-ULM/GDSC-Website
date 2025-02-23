@@ -1,37 +1,49 @@
 import React from "react";
 import "./FlagshipEvents.css";
-// import hawkathonLogo from "../assets/hawkathon.png";
-// import techxpoLogo from "../assets/techxpo.png";
-// import codeclashLogo from "../assets/codeclash.png";
+import hawkathonLogo from "../assets/hawkathon.jpeg";
+import techxpoLogo from "../assets/techxpo.png";
+import codeclashLogo from "../assets/codeclash.png";
+import { Link } from "react-router-dom";
 
 const events = [
   {
     name: "Hawkathon",
-    date: "March 15-17, 2025",
-    nextDate: "September 20-22, 2025",
-    description: "48-hour hackathon focused on solving real-world problems using Google technologies",
+    date: "TBD",
+    description:
+      "An annual hackathon event where students collaborate to build innovative solutions within 2-3 days",
     color: "#4285F4", // Google Blue
-    logo: "hawkathonLogo",
-    tags: ["Hackathon", "Innovation", "48 Hours"]
+    logo: hawkathonLogo,
+    tags: ["Hackathon", "Innovation", "Collab"],
+    links: [
+      {
+        text: "Learn More",
+        link: "events/hawkathon",
+      },
+      {
+        text: "Register Team",
+        link: "https://webservices.ulm.edu/webforms/form/hawkathon-registration",
+      },
+    ],
   },
   {
     name: "TechXPO",
-    date: "April 5, 2025",
-    nextDate: "October 12, 2025",
-    description: "Tech expo showcasing student projects and innovations with industry professionals",
+    date: "TBD",
+    description:
+      "A technology exhibition event featuring student projects, demonstrations and networking opportunities",
     color: "#0F9D58", // Google Green
-    logo: "techxpoLogo",
-    tags: ["Exhibition", "Networking", "Projects"]
+    logo: techxpoLogo,
+    tags: ["Exhibition", "Networking", "Projects"],
   },
   {
     name: "CodeClash",
-    date: "May 1, 2025",
-    nextDate: "November 8, 2025",
-    description: "Competitive programming tournament with real-time challenges and mentorship",
+    date: "March 7, 2025",
+    nextDate: "March 21, 2025",
+    description:
+      "A competitive programming event testing participants' problem-solving and coding skills",
     color: "#DB4437", // Google Red
-    logo: "codeclashLogo",
-    tags: ["Competition", "Coding", "Prizes"]
-  }
+    logo: codeclashLogo,
+    tags: ["Competition", "Coding", "Prizes"],
+  },
 ];
 
 function FlagshipEvents() {
@@ -41,7 +53,10 @@ function FlagshipEvents() {
       <div className="events-container">
         {events.map((event, index) => (
           <div className="event-card" key={index}>
-            <div className="event-header" style={{ backgroundColor: `${event.color}15` }}>
+            <div
+              className="event-header"
+              style={{ backgroundColor: `${event.color}15` }}
+            >
               <img src={event.logo} alt={event.name} className="event-logo" />
               <h3 style={{ color: event.color }}>{event.name}</h3>
             </div>
@@ -51,7 +66,10 @@ function FlagshipEvents() {
                   <span
                     key={idx}
                     className="event-tag"
-                    style={{ backgroundColor: `${event.color}15`, color: event.color }}
+                    style={{
+                      backgroundColor: `${event.color}15`,
+                      color: event.color,
+                    }}
                   >
                     {tag}
                   </span>
@@ -63,14 +81,82 @@ function FlagshipEvents() {
                   <span className="date-label">Next Event</span>
                   <span className="date-value">{event.date}</span>
                 </div>
-                <div className="date-item">
-                  <span className="date-label">Following</span>
-                  <span className="date-value">{event.nextDate}</span>
-                </div>
+                {event.nextDate && (
+                  <div className="date-item">
+                    <span className="date-label">Following</span>
+                    <span className="date-value">{event.nextDate}</span>
+                  </div>
+                )}
               </div>
-              <button className="event-button" style={{ backgroundColor: event.color }}>
-                Learn More
-              </button>
+              {/* Removed the undefined 'e' variable */}
+              {event.links ? (
+                <div className="event-buttons">
+                  {event.links.map((link, idx) =>
+                    link.link.startsWith("http") ? (
+                      <a
+                        key={idx}
+                        href={link.link}
+                        className="event-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          backgroundColor: event.color,
+                          display: "inline-block",
+                          width: "fit-content",
+                          margin: "0 8px",
+                        }}
+                      >
+                        {link.text}
+                      </a>
+                    ) : (
+                      <Link
+                        key={idx}
+                        to={link.link}
+                        className="event-button"
+                        style={{
+                          backgroundColor: event.color,
+                          display: "inline-block",
+                          width: "fit-content",
+                          margin: "0 8px",
+                        }}
+                      >
+                        {link.text}
+                      </Link>
+                    )
+                  )}
+                </div>
+              ) : (
+                event.link &&
+                (event.link.startsWith("http") ? (
+                  <a
+                    href={event.link}
+                    className="event-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      backgroundColor: event.color,
+                      display: "inline-block",
+                      width: "fit-content",
+                      alignSelf: "center",
+                    }}
+                  >
+                    Learn More
+                  </a>
+                ) : (
+                  <Link
+                    to={event.link}
+                    className="event-button"
+                    style={{
+                      backgroundColor: event.color,
+                      display: "inline-block",
+                      width: "fit-content",
+                      alignSelf: "center",
+                    }}
+                  >
+                    Learn More
+                  </Link>
+                ))
+              )}
             </div>
           </div>
         ))}

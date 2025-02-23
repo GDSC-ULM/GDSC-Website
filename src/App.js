@@ -6,6 +6,7 @@ import About from "./About";
 import "./App.css";
 import Home from "./HomePage/Home";
 import NavBar from "./NavBar";
+import AnnouncementBar from "./components/AnnouncementBar";
 import Join from "./Join";
 import Events from "./EventsPage/Events";
 import Hawkthon from "./HomePage/Hawkthon";
@@ -23,13 +24,14 @@ function App() {
     >
       <div className="App">
         <NavBar />
+        <AnnouncementBar />
         <main className="content-wrapper">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/join" element={<Join />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/events/hawkthon" element={<Hawkthon />} />
+            <Route path="/events/hawkathon" element={<Hawkthon />} />
           </Routes>
         </main>
       </div>

@@ -94,17 +94,22 @@
 }
 
 .event-button {
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
   color: white;
-  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition: opacity 0.2s ease;
 }
 
 .event-button:hover {
   opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-button:active {
+  transform: translateY(0);
 }
 
 .event-card {
@@ -189,21 +194,12 @@
   color: #202124;
 }
 
-.event-button {
-  width: 100%;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  margin-top: 1rem;
-}
-
-.event-button:hover {
-  opacity: 0.9;
+.event-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 800px) {
