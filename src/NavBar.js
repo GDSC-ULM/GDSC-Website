@@ -35,7 +35,7 @@ function NavBar() {
       <Link to="/" className="logo-wrapper">
         <img src={logo} alt="GDSC Logo" className="logo" />
       </Link>
-      
+
       <div className="menu-section">
         {/* Desktop Menu */}
         <Menu
