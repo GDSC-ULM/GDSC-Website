@@ -1,0 +1,96 @@
+.hawkthon-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  background: transparent;
+}
+
+.hawkthon-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hawkthon-content h1.ant-typography {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hawkthon-description {
+  margin: 2rem 0;
+}
+
+.hawkthon-description h2.ant-typography {
+  color: #4285F4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hawkthon-description ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hawkthon-description li {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.hawkthon-description li::before {
+  content: '•';
+  color: #4285F4;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: -0.2em;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.action-buttons .ant-btn {
+  min-width: 200px;
+  height: 48px;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hawkthon-page {
+    padding: 1rem;
+  }
+
+  .hawkthon-content {
+    padding: 1.5rem;
+  }
+
+  .hawkthon-content h1.ant-typography {
+    font-size: 2rem !important;
+  }
+
+  .hawkthon-description h2.ant-typography {
+    font-size: 1.5rem !important;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .action-buttons .ant-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

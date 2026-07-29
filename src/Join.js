@@ -1,43 +1,97 @@
 import React from "react";
+import { Card, Button, Typography, List, Space } from "antd";
+import { UserOutlined, TeamOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import "./Join.css";
+import Animation from "./HomePage/Animation";
+
+const { Title, Text } = Typography;
 
 function Join() {
+  const memberBenefits = [
+    "Access to exclusive GDSC events and workshops",
+    "Networking opportunities with industry professionals",
+    "Hands-on experience with cutting-edge technologies",
+    "Internship opportunities through Google's network",
+    "Certificate of participation in GDSC activities",
+  ];
+
+  const coreBenefits = [
+    "Leadership experience in a global tech community",
+    "Enhanced networking opportunities",
+    "Priority access to Google events and resources",
+    "Recognition as a GDSC team leader",
+  ];
+
+  const renderListItem = (item) => (
+    <div className="benefit-item">
+      <CheckCircleOutlined className="check-icon" />
+      <Text>{item}</Text>
+    </div>
+  );
+
   return (
-    <div className="joinPage">
-      <h1>Become a member of GDSC</h1>
+    <div className="join-page">
+      <Animation />
+      <Title style={{ textAlign: 'center', marginBottom: '2rem' }}>Join GDSC Community</Title>
       <div className="joinCards">
-        <div className="joinCard member">
-          <h3>Become a Member</h3>
-          <p>Perks of A Member</p>
-          <ul>
-            <li>Free Events</li>
-            <li>Internship Oppurtinites</li>
-            <li>Networking</li>
-          </ul>
-          <a
+        <Card
+          className="joinCard member"
+          hoverable
+          title={
+            <Space>
+              <UserOutlined style={{ fontSize: "24px" }} />
+              <Title level={3} style={{ margin: 0 }}>
+                Become a Member
+              </Title>
+            </Space>
+          }
+        >
+          <div className="benefits-list">
+            {memberBenefits.map((benefit, index) => (
+              <div key={index} className="benefit-wrapper">
+                {renderListItem(benefit)}
+              </div>
+            ))}
+          </div>
+          <Button
+            type="primary"
+            size="large"
             href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
             target="_blank"
-            rel="noreferrer"
+            className="join-button"
           >
-            <button>Join</button>
-          </a>
-        </div>
-        <div className="joinCard team">
-          <h3>Become a Core Team Member</h3>
-          <p>Perks of A Core Team Member</p>
-          <ul>
-            <li>Leadership Expereince</li>
-            <li>Internship Oppurtinites</li>
-            <li>Networking</li>
-          </ul>
-          <a
-            href="https://gdsc.community.dev/the-university-of-louisiana-monroe/"
-            target="_blank"
-            rel="noreferrer"
+            Join Now
+          </Button>
+        </Card>
+
+        <Card
+          className="joinCard team"
+          hoverable
+          title={
+            <Space>
+              <TeamOutlined style={{ fontSize: "24px" }} />
+              <Title level={3} style={{ margin: 0 }}>
+                Become a Core Team Member
+              </Title>
+            </Space>
+          }
+        >
+          <div className="benefits-list">
+            {coreBenefits.map((benefit, index) => (
+              <div key={index} className="benefit-wrapper">
+                {renderListItem(benefit)}
+              </div>
+            ))}
+          </div>
+          <Button
+            type="primary"
+            size="large"
+            disabled
+            className="join-button"
           >
-            <button disabled>Apply</button>
-          </a>
-        </div>
+            Applications Closed
+          </Button>
+        </Card>
       </div>
     </div>
   );
